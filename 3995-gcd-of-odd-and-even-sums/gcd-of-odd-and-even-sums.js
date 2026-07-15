@@ -3,6 +3,6 @@
  * @return {number}
  */
 var gcdOfOddEvenSums = function(n) {
-    return n;
+    return n
     
 };
