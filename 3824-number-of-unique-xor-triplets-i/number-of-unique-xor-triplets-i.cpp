@@ -5,7 +5,7 @@ public:
        if(n<3) return n;
        int ans=1;
        while( ans<=n){
-        ans=ans*2;
+        ans=ans<<1;
        }
        return ans;
 
