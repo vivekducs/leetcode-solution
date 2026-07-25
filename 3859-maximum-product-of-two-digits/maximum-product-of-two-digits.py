@@ -1,16 +1,15 @@
 class Solution:
     def maxProduct(self, n: int) -> int:
-        val=str(n)
-        first,second=0,0
-        for ch in val:
-            char=int(ch)
-            if char>first:
+        first=0
+        second=0
+        while n:
+            digit=n%10
+            n//=10
+            if digit>first:
                 second=first
-                first=char
-                
-            elif char>second:
-                second=char
+                first=digit
+            elif digit>second:
+                second=digit
         return first*second
-
 
         
